@@ -1,13 +1,13 @@
 <h1>Make your form here</h1>
 
-<form action="/pirates" method="POST">
-  <input type="text" name="pirate[name]" placeholder="Pirate Name"></br></br>
-  <input type="text" name="pirate[weight]" placeholder="Pirate Weight"></br></br>
-  <input type="text" name="pirate[height]" placeholder="Pirate Height"></br></br>
-  <% 2.times do |i|%>
-  <input type="text" name="ship[<%=i%>][name]" placeholder="Ship Name"></br></br>
-  <input type="text" name="ship[<%=i%>][type]" placeholder="Ship Type"></br></br>
-  <input type="text" name="ship[<%=i%>][booty]" placeholder="Ship Booty"></br></br>
-  <% end %>
-  <input type="submit" value="ARRGH!">
-</form>
+  <form action="/pirates" method="POST">
+    Pirate Name: <input type="text" name="pirate[name]">
+    Pirate Weight: <input type="text" name="pirate[weight]">
+    Pirate Height: <input type="text" name="pirate[height]">
+    Ship Name: <input type="text" id="ship_name_1" name="ships[name]">
+    Ship Type: <input type="text" id="ship_type_1" name="ship[type]">
+    Ship Booty: <input type="text" id="ship_booty_1" name="ship[booty]">
+    Ship Name: <input type="text" id="ship_name_2" name="ships[name]">
+    Ship Type: <input type="text" id="ship_type_2" name="ship[type]">
+    Ship Booty: <input type="text" id="ship_booty_2" name="ship[booty]">
+  </form>
